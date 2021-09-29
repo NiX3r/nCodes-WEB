@@ -206,17 +206,27 @@
     <h2 class="section-title">Contact</h2>
 
     <div class="contact__container bd-grid">
-     <form action="" class="contact__form">
-      <input type="text" placeholder="Name" class="contact__input" />
-      <input type="mail" placeholder="Email" class="contact__input" />
+     <form data-netlify="true" action="" method="POST" class="contact__form">
+      <input
+       name="fullName"
+       type="text"
+       placeholder="Name"
+       class="contact__input"
+      />
+      <input
+       name="email"
+       type="mail"
+       placeholder="Email"
+       class="contact__input"
+      />
       <textarea
-       name=""
+       name="message"
        id=""
        cols="0"
        rows="10"
        class="contact__input"
       ></textarea>
-      <input type="button" value="Send" class="contact__button button" />
+      <input type="submit" value="Send" class="contact__button button" />
      </form>
     </div>
    </section>
